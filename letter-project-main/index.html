@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Letter for You</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="intro" id="introText">
+      i hope you read this, even if it's too late.
+    </div>
+    <button class="btn" onclick="startHunt()">Read it</button>
+    <div class="hunt" id="huntBox" style="display: none">
+      <div class="step" id="step1">
+        <h2>Clue 1</h2>
+        <p>Tanggal jadian kita</p>
+        <input type="text" id="a1" />
+        <button onclick="check1()">Next</button>
+      </div>
+
+      <div class="step" id="step2" style="display: none">
+        <h2>Clue 2</h2>
+        <p>Nama peliharaan online kita</p>
+        <input type="text" id="a2" />
+        <button onclick="check2()">Next</button>
+      </div>
+
+      <div class="step" id="step3" style="display: none">
+        <h2>Final Clue</h2>
+        <p>Kita udah berapa tahun bareng?</p>
+        <input type="text" id="a3" />
+        <button onclick="openLetter()">Open</button>
+      </div>
+    </div>
+
+    <div class="letter" id="letterBox">
+      <p id="typedText"></p>
+      <img src="ttd.png" alt="Signature" class="signature" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
